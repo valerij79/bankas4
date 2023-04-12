@@ -6,3 +6,38 @@
 
 // Bootstrap
 @import 'bootstrap/scss/bootstrap';
+.client-line {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    .client-info {
+        display: flex;
+        justify-content: space-around;
+        span {
+            color: crimson;
+            font-weight: bold;
+            letter-spacing: 5px;
+            padding-left: 20px;
+        }
+    }
+    .buttons {
+        display: flex;
+        justify-content: flex-end;
+        gap: 10px;
+    }
+}
+
+.sort-filter-buttons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    height: 100%;
+    position: relative;
+    button,
+    a {
+        top: -6px;
+        position: relative;
+    }
+}

@@ -167,6 +167,11 @@ class ClientController extends Controller
     {
         if($client->funds >= $request->funds)
         {
+            if($request->funds < 0){
+                return redirect()
+                ->back()
+                ->withErrors('Removed funds can\'t be negative.');
+            }
             $client->funds -= $request->funds;
         } else {
             return redirect()

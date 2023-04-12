@@ -15,6 +15,8 @@ class Client extends Model
         'account_no',
         'funds',
     ];
+
+    
 }
 
 
